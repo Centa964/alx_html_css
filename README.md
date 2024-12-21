@@ -1,1 +1,2 @@
 # alx_html_css
+This project is an advanced HTML and CSS exercise designed to evaluate our proficiency in advanced CSS techniques and our ability to translate a Figma UI design into functional code. It involves creating an HTML file structured according to the layout specified in the Figma design and styling it with an external styles.css file. The goal is to faithfully replicate the design by adhering closely to the specifications provided in the Figma file, ensuring an accurate and polished implementation using HTML and CSS.
