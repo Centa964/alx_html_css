@@ -1,0 +1,140 @@
+:root {
+    --color-white: #FFFFFF; 
+    --color-primary: #FF6565;
+  
+  }
+  
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./font/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  }
+  
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./font/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Source Sans Pro', Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Section styling */
+section {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input and textarea styling */
+input[type="text"], textarea {
+    border: none;
+    border-bottom: 2px solid #000; 
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    transition: border-bottom 0.3s ease;
+}
+
+/* Focus state for input and textarea */
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 2px solid; 
+}
+
+/* Message textarea styling */
+textarea {
+    resize: vertical;
+    min-height: 50px;
+    height: 40px;
+}
+
+
+/* Expanding textarea when focused */
+textarea:focus {
+    height: 150px; /* Expanded height when focused */
+}
+
+/* Button styling */
+.cta_button{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    
+    }
+
+
+
+/* Media query for tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    section {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 14px;
+    }
+
+}
+
+/* Media query for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 13px;
+    }
+
+}

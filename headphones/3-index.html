@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="2-styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
 </head>
 <body>
     <header>
-    
         <div class="container">
             <div class="nav">
                 <img src="images/logo_headphones.png" alt="" class="nav_logo">
@@ -17,17 +16,13 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                </label>
-                
+                </label>    
                     <ul class="nav_list">
                         <li><a href="#">what we do</a></li>
                         <li><a href="#">our results</a></li>
                         <li><a href="#">contact us</a></li>
                     </ul>
-            
-               
             </div>
-           
         </div>
             
         <div class="hero">
@@ -41,7 +36,7 @@
                 nisi ut aliquip ex ea commodo consequat.   
             </p>
         </div>
-    </header>   
+    </header>  
     <section class="icons"><!-- FIX SPACE BETWEEN ICONS-->
         <div>
             <p class="icon_paragragh"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -109,5 +104,23 @@
            
         </div>
     </section>
+    <section><!-- FIX LOGO BUTTON TO SMALL AND THE NAME TO SIT ON TEXTAREA THEN EXPAND WHEN CLICKED-->
+        <div>
+            <h2>Contact us</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+               <input type="text" id="name" name="name">
+               
+               <label for="email">Email</label>
+               <input type="text" id="email" name="email">
+
+               <label for="message">Your message</label>
+               <textarea name="message" id="message"></textarea>
+
+               <button type="submit" class="cta_button">CALL TO ACTION</button>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
