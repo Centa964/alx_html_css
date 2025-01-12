@@ -1,0 +1,133 @@
+:root {
+    --color-white: #FFFFFF; 
+    --color-primary: #FF6565;
+  
+  }
+  
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./font/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  }
+  
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./font/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial;
+    background-color: #f7f7f7; /* Light background for contrast */
+    color: #333; /* Text color for readability */
+    
+}
+
+section.icons {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 15em;
+}
+
+.icon_paragragh {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    
+    justify-items: center;
+    padding: 0 2rem;
+   
+}
+
+.icon-item {
+    padding: 1.5rem;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+
+.icon-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5rem;
+}
+
+
+.icon-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section.icons {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 5em;
+    }
+   
+    .icon_paragragh {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 auto 2rem;
+        max-width: 600px;
+    }
+
+    .icons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .icon-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .icon-item h3 {
+        font-size: 1rem;
+    }
+
+    .icon-item p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icon_paragragh {
+        font-size: 16px;
+        padding-left: 6em;
+        padding-right: 6em;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    .icons-grid {
+        grid-template-columns: 1fr;
+    }
+    .icon-item img {
+        margin-bottom: 4rem;
+    }
+    
+}
